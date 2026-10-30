@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ka" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFlow - ინოვაციური ციფრული გადაწყვეტა</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- ========================================== -->
+    <!-- 1. HEADER / NAVIGATION BAR (ნავიგაცია)       -->
+    <!-- ========================================== -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- ლოგო (Logo) -->
+                <a href="#" class="flex items-center space-x-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center text-white shadow-md shadow-indigo-200 group-hover:scale-105 transition-transform duration-200">
+                        <!-- SVG Icon -->
+                        <svg class="w-6 h-6 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <span class="text-2xl font-black tracking-tight text-slate-900 group-hover:text-indigo-600 transition-colors">
+                        Tech<span class="text-indigo-600">Flow</span>
+                    </span>
+                </a>
+
+                <!-- ნავიგაციის ბმულები (Navigation Links - Desktop) -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-sm font-semibold text-slate-700 hover:text-indigo-600 transition-colors">მთავარი</a>
+                    <a href="#features" class="text-sm font-semibold text-slate-700 hover:text-indigo-600 transition-colors">ფუნქციები</a>
+                    <a href="#about" class="text-sm font-semibold text-slate-700 hover:text-indigo-600 transition-colors">ჩვენ შესახებ</a>
+                    <a href="#contact" class="text-sm font-semibold text-slate-700 hover:text-indigo-600 transition-colors">კონტაქტი</a>
+                </nav>
+
+                <!-- მოქმედების ღილაკი Header-ში (Header CTA Button) -->
+                <div class="hidden sm:flex items-center space-x-4">
+                    <a href="#contact" class="px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 shadow-sm shadow-indigo-300 transition-all duration-200 hover:shadow-md">
+                        დაწყება
+                    </a>
+                </div>
+
+                <!-- მობილური მენიუს იკონი (ვიზუალური ღილაკი JS-ის გარეშე) -->
+                <div class="flex md:hidden">
+                    <a href="#features" class="p-2 text-slate-600 hover:text-indigo-600" aria-label="Menu">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ========================================== -->
+    <!-- 2. HERO SECTION (მთავარი შესავალი სექცია)   -->
+    <!-- ========================================== -->
+    <section id="home" class="relative pt-16 pb-24 lg:pt-24 lg:pb-32 overflow-hidden">
+        <!-- ფონის დეკორატიული ელემენტი (Background Glow) -->
+        <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
+            <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-indigo-400 to-violet-300 opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto">
+                
+                <!-- პატარა ბეიჯი (Badge) -->
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs sm:text-sm font-medium mb-6">
+                    <span class="w-2 h-2 rounded-full bg-indigo-600 animate-pulse"></span>
+                    <span>ახალი თაობის ციფრული პლატფორმა</span>
+                </div>
+
+                <!-- მთავარი სათაური (Main Headline) -->
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight sm:leading-none">
+                    მართეთ თქვენი პროექტები <br class="hidden sm:inline" />
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600">
+                        სიმარტივითა და სიჩქარით
+                    </span>
+                </h1>
+
+                <!-- მოკლე აღწერა (Description) -->
+                <p class="mt-6 text-base sm:text-lg lg:text-xl text-slate-600 leading-relaxed">
+                    TechFlow გაძლევთ შესაძლებლობას გააერთიანოთ თქვენი გუნდის რესურსები, დაგეგმოთ სამუშაო პროცესები და მიაღწიოთ მაქსიმალურ პროდუქტიულობას თანამედროვე ტექნოლოგიების მეშვეობით.
+                </p>
+
+                <!-- მოქმედებისკენ მოწოდების ღილაკები (CTA Buttons) -->
+                <div class="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-3.5 rounded-xl text-base font-semibold text-white bg-indigo-600 hover:bg-indigo-700 shadow-lg shadow-indigo-200 hover:shadow-indigo-300 transition-all duration-200 transform hover:-translate-y-0.5 text-center">
+                        სცადეთ უფასოდ
+                    </a>
+                    <a href="#features" class="w-full sm:w-auto px-8 py-3.5 rounded-xl text-base font-semibold text-slate-700 bg-white hover:bg-slate-100 border border-slate-200 shadow-sm transition-all duration-200 text-center">
+                        გაიგეთ მეტი &rarr;
+                    </a>
+                </div>
+
+                <!-- სანდოობის მაჩვენებელი / მცირე სტატისტიკა -->
+                <div class="mt-12 pt-8 border-t border-slate-200/80 grid grid-cols-2 sm:grid-cols-3 gap-6 text-center">
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-indigo-600">99.9%</div>
+                        <div class="text-xs sm:text-sm text-slate-500 mt-1 font-medium">სტაბილურობა (Uptime)</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-indigo-600">10k+</div>
+                        <div class="text-xs sm:text-sm text-slate-500 mt-1 font-medium">აქტიური მომხმარებელი</div>
+                    </div>
+                    <div class="col-span-2 sm:col-span-1">
+                        <div class="text-2xl sm:text-3xl font-extrabold text-indigo-600">24/7</div>
+                        <div class="text-xs sm:text-sm text-slate-500 mt-1 font-medium">მხარდაჭერის სერვისი</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- 3. FEATURES / ABOUT SECTION (შესაძლებლობები) -->
+    <!-- ========================================== -->
+    <section id="features" class="py-20 lg:py-28 bg-white border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- სექციის სათაური -->
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-indigo-600 mb-2">
+                    უპირატესობები
+                </h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    რატომ უნდა აირჩიოთ ჩვენი სერვისი?
+                </p>
+                <p class="mt-4 text-slate-600 text-base sm:text-lg">
+                    ყველაფერი, რაც გჭირდებათ ბიზნესის წარმატებული მართვისთვის ერთ მოქნილ გარემოში.
+                </p>
+            </div>
+
+            <!-- ბარათების გრიდი (Cards Grid - მინიმუმ 3 ბარათი მოთხოვნის მიხედვით) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- ბარათი 1: მაღალი სისწრაფე -->
+                <div class="group relative bg-slate-50 hover:bg-white p-8 rounded-2xl border border-slate-200 hover:border-indigo-300 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-600/10 text-indigo-600 flex items-center justify-center mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-colors duration-300">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-indigo-600 transition-colors">
+                        ულტრა სწრაფი მუშაობა
+                    </h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        ოპტიმიზებული ალგორითმები და თანამედროვე ქლაუდ-ინფრასტრუქტურა უზრუნველყოფს მონაცემების მყისიერ დამუშავებასა და უწყვეტ რეჟიმში ფუნქციონირებას.
+                    </p>
+                </div>
+
+                <!-- ბარათი 2: მაქსიმალური დაცულობა -->
+                <div class="group relative bg-slate-50 hover:bg-white p-8 rounded-2xl border border-slate-200 hover:border-indigo-300 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-600/10 text-indigo-600 flex items-center justify-center mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-colors duration-300">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-indigo-600 transition-colors">
+                        მონაცემთა დაცვა
+                    </h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        უახლესი ენკრიპციის სტანდარტები და მრავალდონიანი ავტორიზაცია თქვენი კომპანიის კონფიდენციალურ ინფორმაციას საიმედოდ იცავს.
+                    </p>
+                </div>
+
+                <!-- ბარათი 3: მარტივი ინტეგრაცია -->
+                <div class="group relative bg-slate-50 hover:bg-white p-8 rounded-2xl border border-slate-200 hover:border-indigo-300 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-600/10 text-indigo-600 flex items-center justify-center mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-colors duration-300">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-indigo-600 transition-colors">
+                        მოქნილი ინტეგრაცია
+                    </h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        მარტივად დააკავშირეთ არსებული ხელსაწყოები ჩვენს API-სთან სულ რამდენიმე წუთში, ზედმეტი სირთულეების გარეშე.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- დამატებითი "ჩვენ შესახებ" ბლოკი (About Us) სექციის გასამდიდრებლად -->
+            <div id="about" class="mt-20 p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-indigo-900 via-indigo-800 to-slate-900 text-white shadow-xl">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                    <div>
+                        <span class="text-indigo-300 text-xs sm:text-sm font-semibold uppercase tracking-wider">ჩვენს შესახებ</span>
+                        <h3 class="text-2xl sm:text-3xl font-extrabold mt-2 mb-4">შექმნილია თანამედროვე გუნდებისთვის</h3>
+                        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                            ჩვენი მისიაა შევქმნათ ინტუიციური, საიმედო და სწრაფი ციფრული ინსტრუმენტები. ჩვენი გადაწყვეტები ეხმარება ასობით კომპანიას დაზოგონ დრო და ფოკუსირდნენ იმაზე, რაც ნამდვილად მნიშვნელოვანია.
+                        </p>
+                        <div class="mt-6 flex flex-wrap gap-4 text-sm font-medium">
+                            <span class="inline-flex items-center gap-1.5 bg-white/10 px-3.5 py-1.5 rounded-lg border border-white/10">
+                                <span class="text-indigo-400">✓</span> 100% გამჭვირვალობა
+                            </span>
+                            <span class="inline-flex items-center gap-1.5 bg-white/10 px-3.5 py-1.5 rounded-lg border border-white/10">
+                                <span class="text-indigo-400">✓</span> მუდმივი განახლებები
+                            </span>
+                            <span class="inline-flex items-center gap-1.5 bg-white/10 px-3.5 py-1.5 rounded-lg border border-white/10">
+                                <span class="text-indigo-400">✓</span> ექსპერტთა მხარდაჭერა
+                            </span>
+                        </div>
+                    </div>
+                    <div id="contact" class="bg-white/10 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-white/20">
+                        <h4 class="text-xl font-bold mb-3">დაიწყეთ დღესვე</h4>
+                        <p class="text-slate-300 text-sm mb-6">შემოუერთდით ჩვენს პლატფორმას და გამოსცადეთ ყველა ფუნქცია უფასოდ 14 დღის განმავლობაში.</p>
+                        <form class="space-y-4" onsubmit="return false;">
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-1">ელექტრონული ფოსტა</label>
+                                <input type="email" placeholder="example@company.com" class="w-full px-4 py-2.5 rounded-xl bg-white/10 border border-white/20 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-400 text-sm" />
+                            </div>
+                            <button type="button" class="w-full py-3 rounded-xl bg-indigo-500 hover:bg-indigo-600 text-white font-semibold text-sm transition-colors shadow-md">
+                                უფასო რეგისტრაცია
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- 4. FOOTER (ქვედა კოლონტიტული)              -->
+    <!-- ========================================== -->
+    <footer class="bg-slate-900 text-slate-400 py-12 lg:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-12 border-b border-slate-800">
+                
+                <!-- ბრენდის ინფორმაცია -->
+                <div class="md:col-span-2">
+                    <a href="#" class="flex items-center space-x-3 text-white mb-4">
+                        <div class="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center text-white">
+                            <svg class="w-5 h-5 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <span class="text-xl font-black tracking-tight text-white">
+                            Tech<span class="text-indigo-400">Flow</span>
+                        </span>
+                    </a>
+                    <p class="text-sm text-slate-400 max-w-sm leading-relaxed">
+                        ინოვაციური ციფრული გადაწყვეტები თქვენი ბიზნესის ეფექტური და უსაფრთხო განვითარებისთვის.
+                    </p>
+                </div>
+
+                <!-- ნავიგაციის სწრაფი ბმულები -->
+                <div>
+                    <h4 class="text-xs font-semibold text-slate-200 uppercase tracking-wider mb-4">ნავიგაცია</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="#home" class="hover:text-white transition-colors">მთავარი</a></li>
+                        <li><a href="#features" class="hover:text-white transition-colors">ფუნქციები</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">ჩვენ შესახებ</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">კონტაქტი</a></li>
+                    </ul>
+                </div>
+
+                <!-- სოციალური ქსელები (Social Links) -->
+                <div>
+                    <h4 class="text-xs font-semibold text-slate-200 uppercase tracking-wider mb-4">გამოგვყევით</h4>
+                    <div class="flex space-x-4">
+                        <!-- GitHub -->
+                        <a href="#" class="w-9 h-9 rounded-lg bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:bg-slate-700 transition-colors" aria-label="GitHub">
+                            <svg class="w-5 h-5 fill-currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                            </svg>
+                        </a>
+                        <!-- Twitter / X -->
+                        <a href="#" class="w-9 h-9 rounded-lg bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:bg-slate-700 transition-colors" aria-label="Twitter">
+                            <svg class="w-5 h-5 fill-currentColor" viewBox="0 0 24 24">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </a>
+                        <!-- LinkedIn -->
+                        <a href="#" class="w-9 h-9 rounded-lg bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:bg-slate-700 transition-colors" aria-label="LinkedIn">
+                            <svg class="w-5 h-5 fill-currentColor" viewBox="0 0 24 24">
+                                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- საავტორო უფლებები (Copyright Notice) -->
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+                <p>&copy; 2026 TechFlow. ყველა უფლება დაცულია.</p>
+                <p class="mt-2 sm:mt-0">შექმნილია HTML5 & Tailwind CSS-ის გამოყენებით</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
